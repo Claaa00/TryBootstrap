@@ -166,26 +166,114 @@
               <div>
                 <form>
                   <div class="row mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label"
-                      >Email</label
+                    <label for="inputRoomType" class="col-sm-3 col-form-label"
+                      >Room Type</label
                     >
-                    <div class="col-sm-10">
+                    <div class="col-sm-9">
+                      <select class="form-select" id="inputRoomType">
+                        <option selected>Choose...</option>
+                        <option value="">Premium</option>
+                        <option value="">Regular</option>
+                        <option value="">Room Type 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputRoomNumber" class="col-sm-3 col-form-label"
+                      >Room Number</label
+                    >
+                    <div class="col-sm-9">
+                      <select class="form-select" id="inputRoomTNumber">
+                        <option selected>Choose...</option>
+                        <option value="">Room 1</option>
+                        <option value="">Room 2</option>
+                        <option value="">Room 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Check-In's Information</h4>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      for="inputCheckInDate"
+                      class="col-sm-3 col-form-label"
+                      >Check-In Date</label
+                    >
+                    <div class="col-sm-9">
                       <input
-                        type="email"
+                        type="date"
                         class="form-control"
-                        id="inputEmail3"
+                        id="inputCheckInDate"
                       />
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label"
-                      >Password</label
+                    <label
+                      for="inputDurationOfStay"
+                      class="col-sm-3 col-form-label"
+                      >Duration Of Stay</label
                     >
-                    <div class="col-sm-10">
+                    <div class="col-sm-9">
                       <input
-                        type="password"
+                        type="number"
                         class="form-control"
-                        id="inputPassword3"
+                        id="inputDurationOfStay"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      for="inputChechOutDate"
+                      class="col-sm-3 col-form-label"
+                      >Check-Out Date</label
+                    >
+                    <div class="col-sm-9">
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="inputChechOutDate"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      for="inputpaymentMethod"
+                      class="col-sm-3 col-form-label"
+                      >Payment Method</label
+                    >
+                    <div class="col-sm-9">
+                      <select class="form-select" id="inputpaymentMethod">
+                        <option selected>Choose...</option>
+                        <option value="">Cash/Over The Counter</option>
+                        <option value="">GCash</option>
+                        <option value="">Bank Transfer</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputAmount" class="col-sm-3 col-form-label"
+                      >Amount</label
+                    >
+                    <div class="col-sm-9">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="inputAmount"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      for="inputTotalAmount"
+                      class="col-sm-3 col-form-label"
+                      >Total</label
+                    >
+                    <div class="col-sm-9">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="inputTotalAmount"
                       />
                     </div>
                   </div>
