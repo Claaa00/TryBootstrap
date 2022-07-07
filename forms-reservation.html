@@ -32,21 +32,326 @@
       </nav>
     </header>
     <main>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link" href="./forms-chech-in.html">Check-In Form</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
-            >Reservation Form</a
-          >
-        </li>
-      </ul>
-      <div class="row">
-        <!-- left form -->
-        <div class="col-md-6"></div>
-        <!-- right form -->
-        <div class="col-md-6"></div>
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="./forms-chech-in.html">Check-In Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#"
+                >Reservation Form</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 card-body">
+          <div class="container">
+            <form class="row g-3">
+              <!-- left -->
+              <div class="col-md-6">
+                <h4>Customer's Information</h4>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <h4>Room's Information</h4>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label
+                    for="inputTransactionID"
+                    class="col-sm-3 col-form-label"
+                    >Transaction ID</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputTransactionID"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputRoomType" class="col-sm-3 col-form-label"
+                    >Room Type</label
+                  >
+                  <div class="col-sm-9">
+                    <select class="form-select" id="inputRoomType">
+                      <option selected>Choose...</option>
+                      <option value="1">Premium</option>
+                      <option value="2">Regular</option>
+                      <option value="3">Room Type 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <!-- blank -->
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputRoomNumber" class="col-sm-3 col-form-label"
+                    >Room Number</label
+                  >
+                  <div class="col-sm-9">
+                    <select class="form-select" id="inputRoomTNumber">
+                      <option selected>Choose...</option>
+                      <option value="">Room 1</option>
+                      <option value="">Room 2</option>
+                      <option value="">Room 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputName" class="col-sm-3 col-form-label"
+                    >Name</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="First Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+
+              <div class="col-md-6">
+                <!-- blank -->
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputName" class="col-sm-3 col-form-label">
+                    <!-- Middle Name -->
+                  </label>
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="Middle Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <h4>Reservation's Information</h4>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputName" class="col-sm-3 col-form-label">
+                    <!-- Last Name -->
+                  </label>
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputCheckInDate" class="col-sm-3 col-form-label"
+                    >Check-In Date</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="inputCheckInDate"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <!-- blank -->
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label
+                    for="inputDurationOfStay"
+                    class="col-sm-3 col-form-label"
+                    >Duration Of Stay</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputDurationOfStay"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label
+                    for="inputContactNumber"
+                    class="col-sm-3 col-form-label"
+                    >Contact Number</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputContactNumber"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputChechOutDate" class="col-sm-3 col-form-label"
+                    >Check-Out Date</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="inputChechOutDate"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputEmail" class="col-sm-3 col-form-label"
+                    >Email</label
+                  >
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="inputEmail" />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <!-- blank -->
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label class="col-sm-3 col-form-label" for="selectGender"
+                    >Gender</label
+                  >
+                  <!-- DUNNO WHAT TO PUT IN VALUE -->
+                  <div class="col-sm-9">
+                    <select class="form-select" id="selectGender">
+                      <option selected>Choose...</option>
+                      <option value="1">Girl</option>
+                      <option value="2">Boy</option>
+                      <option value="3">Prefer Not To Say</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label
+                    for="inputpaymentMethod"
+                    class="col-sm-4 col-form-label"
+                    >Payment Method</label
+                  >
+                  <div class="col-sm-8">
+                    <select class="form-select" id="inputpaymentMethod">
+                      <option selected>Choose...</option>
+                      <option value="">Cash/Over The Counter</option>
+                      <option value="">GCash</option>
+                      <option value="">Bank Transfer</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <label for="inputAddress" class="col-sm-3 col-form-label"
+                    >Address</label
+                  >
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputAddress" />
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <div class="input-group col-md-9">
+                    <label for="inputAmount" class="col-sm-3 col-form-label"
+                      >Amount</label
+                    >
+                    <span class="input-group-text">Php.</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputAmount"
+                      aria-label="Amount (to the nearest peso)"
+                    />
+                    <span class="input-group-text">.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- blank -->
+              </div>
+              <div class="col-md-6">
+                <div class="row mb-3">
+                  <div class="input-group col-md-9">
+                    <label
+                      for="inputTotalAmount"
+                      class="col-sm-3 col-form-label"
+                      >Total</label
+                    >
+                    <span class="input-group-text">Php.</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputTotalAmount"
+                      aria-label="Amount (to the nearest peso)"
+                    />
+                    <span class="input-group-text">.00</span>
+                  </div>
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="col-12">
+                <div class="row mb-3">
+                  <button type="submit" class="btn btn-primary col-md-4">
+                    Reserve
+                  </button>
+                  <button type="reset" class="btn btn-primary col-md-4">
+                    Reset
+                  </button>
+                  <button type="button" class="btn btn-primary col-md-4">
+                    Back
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <!-- Optional JavaScript; choose one of the two! -->
